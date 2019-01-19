@@ -1,0 +1,23 @@
+{
+  "name": "activity-feed",
+  "version": "1.0.0",
+  "description": "an activity feed displays tasks and users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zara603/activity-feed.git"
+  },
+  "author": "Zahra Dargahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zara603/activity-feed/issues"
+  },
+  "homepage": "https://github.com/Zara603/activity-feed#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.4"
+  }
+}

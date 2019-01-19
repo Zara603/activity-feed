@@ -1,0 +1,7 @@
+.text  {
+    text-transform: uppercase;
+    color: #879094;
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 0 3px;
+}

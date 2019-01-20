@@ -36,7 +36,7 @@ export function parseActivityTemplate(template: string) {
     };
     tokens.push(textToken);
   }
-  console.log(tokens)
+
   return tokens;
 }
 

@@ -1,6 +1,6 @@
 import { Activity, Profile, Task} from "../interfaces/ActivityFeed";
 import { ParsedActivity} from "../interfaces/ParsedFeed";
-import parseTemplate from "./ParseTemplate";
+import parseActivityTemplate from "./ParseActivityTemplate";
 
 export function  parseActivity(
   activities: Activity[],
@@ -8,9 +8,9 @@ export function  parseActivity(
   tasks: Task[]
 ) {
   return activities.map(a => {
-    const { task_id: taskId, profile_ids: profileIds, template } = a;
+    const { template } = a;
 
-    let tokens = parseTemplate(template);
+    let tokens = parseActivityTemplate(template);
     const newActivity = {
         template:tokens.map(token => {
             if (token.kind === "text") {

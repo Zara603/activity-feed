@@ -2,16 +2,16 @@
 I used React ⚛️, Typescript  and Express for Server-Side-Rendering 
 👩🏽‍💻
 
-#run client
+# run client
 npm start
 
-#run server
+# run server
 `npx ts-node index.ts`
 
-#run test
+# run test
 npm run test 
 
-#Solution Brief
+# Solution Brief
 
 I used a parser `ParserActivityTemplate` to parse the `template` string in activity-feed to extract profile-id, the filler text and task-id 
 

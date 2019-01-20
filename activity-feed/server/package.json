@@ -17,7 +17,16 @@
   },
   "homepage": "https://github.com/Zara603/activity-feed#readme",
   "dependencies": {
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.20",
+    "babel-register": "^6.26.0",
     "cors": "^2.8.4",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "ignore-styles": "^5.0.1",
+    "path": "^0.12.7",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.4"
   }
 }

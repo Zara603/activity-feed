@@ -51,8 +51,8 @@ class App extends Component<Props, State> {
               onMouseOver={ this.handleMouseOver }
               onMouseOut={ this.handleMouseOut }
           />
-          <div>
-              {this.state.activeItem}
+          <div className="linkHint">
+              {this.state.activeItem || 'Mouse over a user or task to get their path.'}
           </div>
       </div>
   )

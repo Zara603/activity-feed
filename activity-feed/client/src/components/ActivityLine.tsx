@@ -16,7 +16,7 @@ interface Props {
 
 export const ActivityLine = (props: Props) => {
   return (
-    <div>
+    <div className="activityLine">
       {props.activity.template.map((token, index) => {
         if (token.kind === "text") {
           return <TextElement key={index.toString()} content={token.content} />;

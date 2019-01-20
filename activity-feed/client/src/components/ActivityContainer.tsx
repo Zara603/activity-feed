@@ -15,7 +15,7 @@ export const ActivityContainer = class MyComponent extends React.Component<
 > {
   public render() {
     return (
-      <div className="activityLine">
+      <div>
         {this.props.items.map((activity, index) => (
           <ActivityLine
             key={index.toString()}

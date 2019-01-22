@@ -9,13 +9,18 @@ export function parseActivityTemplate(template: string) {
 
   renderTemplate(template);
   function renderTemplate(template: string) {
-    const pattern = /{ (\w+):(\d+) }([^{]+)?/g;
+    const pattern = /([^{]+)?{ (\w+):(\d+) }([^{]+)?/g;
     let matches;
     while ((matches = pattern.exec(template)) !== null) {
-      generateLink(matches[1], matches[2]);
-      
-      if (matches[3]) {
-        generateText(matches[3]);
+
+      if (matches[1]) {
+        generateText(matches[1]);
+      }
+
+      generateLink(matches[2], matches[3]);
+
+      if (matches[4]) {
+        generateText(matches[4]);
       }
     }
   }
@@ -36,7 +41,6 @@ export function parseActivityTemplate(template: string) {
     };
     tokens.push(textToken);
   }
-
   return tokens;
 }
 

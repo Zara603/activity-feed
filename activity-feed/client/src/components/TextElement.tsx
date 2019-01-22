@@ -1,17 +1,12 @@
-import React from 'react'
-import './TextElement.css'
+import React from "react";
+import "./TextElement.css";
 
 interface Props {
-    content : string
+  content: string;
 }
 
+export const TextElement = ({ content }: Props) => (
+  <span className="text">{content}</span>
+);
 
-export const TextElement = (
-    ({ content } : Props) => (
-        <span className="text">
-            {content}
-        </span>
-    )
-)
-
-export default TextElement
+export default TextElement;
